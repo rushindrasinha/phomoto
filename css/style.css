@@ -1,0 +1,74 @@
+
+
+*{
+	font-family: "Century Gothic";
+}
+
+header {
+	color: white;
+}
+
+#background {
+		background: url("wooden_background.jpg") no-repeat 50% 50% fixed;
+		background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		-webkit-background-size: cover;
+	}
+
+.polaroid {
+    display: block;
+    float: left;
+    left: 0;
+    margin: 5px 0;
+    position: relative;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.polaroid li {
+    background: url( 'polaroid.jpg' ) no-repeat 0 0;
+    width: 391px;
+    height: 487px;
+    display: block;
+    float: left;
+    margin-top: 10px;
+}
+.polaroid li img {
+    background: transparent;
+    width: 348px;
+    height: 349px;
+    display: block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 57px;
+    overflow: hidden;
+}
+.polaroid li p {
+    background: none repeat scroll 0 0 transparent;
+    color: black;
+    display: block;
+    float: right;
+    font-size: 24px;
+    font-weight: normal;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+#spotify {
+	display: block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 57px;
+    overflow: hidden;
+}
+
+footer{
+		position:fixed;
+		bottom: 0px;
+		left:0px;
+		width: 100%;
+		background:#442301;
+		color:white;
+		padding: 2px;
+		display: inline-block;
+		text-align: center;
