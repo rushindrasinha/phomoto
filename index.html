@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <!--RS===========This Website is built by Rushi & Cindy =====================RS-->
+<!-- 
+Source for Spotify Widget: http://charts.spotify.com/widget?object=tracks&rank=most_streamed&country=global&windowtype=daily&date=latest -->
 <html>
 <head>
 
@@ -20,30 +22,39 @@
   <title>Phomoto</title>
   
 </head>
-<body>
-<h1>Phomoto</h1>
+<body id = "background">
 <!--RS=== Header Begins ===RS-->
   <header>
 
-
-
-
+	<h1>Phomoto</h1>
+	<h4>Popular Photos Curated with the World's Top Tunes</h4>
 
   </header>
 <!--RS=== Header Ends ===RS-->
 
 
   <section>
+<div class ="polaroid">
+	<li>
+	  <img src="" width="348" height="349" alt="Photo 1">
+	  <p>Photo 1 Caption</p>
+	</li>
 
-
-
+	<li>
+	  <img src="" width="348" height="349" alt="Photo 2">
+	  <p>Photo 2 Caption</p>
+	</li>
+</div>
 
   </section>
 
 
   <section>
+<!-- Spotify Widget Global Top 40 -->
 
-
+<div id="spotify">
+	<iframe src="http://charts.spotify.com/embed?object=tracks&rank=most_streamed&country=global&windowtype=daily&date=latest" width="300" height="400" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+<div>
 
 
   </section>
@@ -51,7 +62,7 @@
 <!--RS=== Footer Begins ===RS-->
   <footer>
 
-
+<p>Created by <a href="mailto: "sinha@rushindra.com>Rushindra Sinha</a> and <a href="mailto: "tongcindyy@gmail.com">Cindy Tong</a></p>
 
   </footer>
 <!--RS=== Footer Ends ===RS-->
