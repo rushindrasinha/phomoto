@@ -1,22 +1,76 @@
+/*body {
+	background: url("wooden_background.jpg")no-repeat;
+	background-size: cover;
 
+}*/
 
 *{
 	font-family: "Century Gothic";
 }
 
-header {
-	color: white;
+.centeralign {
+	text-align: center;
 }
 
-#background {
+.navbar {
+	font-size: 18px;
+}
+
+.navbar-brand {
+	font-size: 40px;
+}
+
+.username	{
+	font-size: 16px;
+}
+
+.profilepicture {
+	height: 50px;
+	width: 50px;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+/*hr {
+	border: 0;
+	width: 80%;
+	color: black;
+	background-color: black;
+	height: 1px;
+}*/
+
+
+/*.poloroid {
+	background: url( 'polaroid.jpg' ) no-repeat 0 0;
+}*/
+
+/*header {
+	color: white;
+}*/
+
+/*#background {
 		background: url("wooden_background.jpg") no-repeat 50% 50% fixed;
 		background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		-webkit-background-size: cover;
-	}
+	}*/
 
-.polaroid {
+/*.polaroid {
     display: block;
     float: left;
     left: 0;
@@ -60,9 +114,9 @@ header {
     margin-left: 20px;
     margin-top: 57px;
     overflow: hidden;
-}
+}*/
 
-footer{
+/*footer{
 		position:fixed;
 		bottom: 0px;
 		left:0px;
@@ -72,3 +126,4 @@ footer{
 		padding: 2px;
 		display: inline-block;
 		text-align: center;
+	}*/

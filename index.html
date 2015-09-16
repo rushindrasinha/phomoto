@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <!--RS===========This Website is built by Rushi & Cindy =====================RS-->
-<!-- 
+<!--
 Source for Spotify Widget: http://charts.spotify.com/widget?object=tracks&rank=most_streamed&country=global&windowtype=daily&date=latest -->
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
 
 <!--RS=== Bootstrap CDN (jQuery + CSS + JS) ===RS-->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -13,6 +16,8 @@ Source for Spotify Widget: http://charts.spotify.com/widget?object=tracks&rank=m
 <!--RS============= Stylesheets =============RS-->
 <link rel="stylesheet" type="text/css" href="css/style.css">
 
+
+
 <!--RS======== JS Files ============RS-->
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/controller.js"></script>
@@ -20,55 +25,254 @@ Source for Spotify Widget: http://charts.spotify.com/widget?object=tracks&rank=m
 
 
   <title>Phomoto</title>
-  
+
 </head>
 
-<body id = "background">
+<body class="centeralign">
 
 
 <!--RS=== Header Begins ===RS-->
   <header>
+        <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Phomoto</a>
+        </div>
 
-	<h1>Phomoto</h1>
-	<h4>Popular Photos Curated with the World's Top Tunes</h4>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><p class="navbar-text">Popular Photos Curated to the World's Top Tunes</p></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">TuneIn Radio <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#" data-toggle="modal" data-target="#vocaltrance">Vocal Trance</a></li>
 
-  </header>
+                <li role="separator" class="divider"></li>
+                <li><a data-toggle="modal" data-target="#jazz" href="#">Jazz</a></li>
+
+                <li role="separator" class="divider"></li>
+                <li><a data-toggle="modal" data-target="#bollywood" href="#">Bollywood</a></li>
+
+                <li role="separator" class="divider"></li>
+                <li><a data-toggle="modal" data-target="#classicrock" href="#">Classic Rock</a></li>
+
+                <li role="separator" class="divider"></li>
+                <li><a data-toggle="modal" data-target="#disco" href="#">Disco</a></li>
+
+                <li role="separator" class="divider"></li>
+                <li><a data-toggle="modal" data-target="#randb" href="#">R&B</a></li>
+
+                <li role="separator" class="divider"></li>
+                <li><a data-toggle="modal" data-target="#hiphop" href="#">Hip Hop</a></li>
+
+                <li role="separator" class="divider"></li>
+                <li><a data-toggle="modal" data-target="#pop" href="#">Pop</a></li>
+
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Spotify <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+        	       <iframe src="http://charts.spotify.com/embed?object=tracks&rank=most_streamed&country=global&windowtype=daily&date=latest" width="300" height="400" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <br><br>
+
 <!--RS=== Header Ends ===RS-->
 
 
   <section>
-<div class ="polaroid">
-	<li>
-	  <img src="" width="348" height="349" alt="Photo 1">
-	  <p>Photo 1 Caption</p>
-	</li>
+    <div class="container">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="instapopular">
 
-	<li>
-	  <img src="" width="348" height="349" alt="Photo 2">
-	  <p>Photo 2 Caption</p>
-	</li>
+          </div>
+        </div>
+
+        <!-- <div class="col-md-4">
+          <div class="instapopular">
+
+          </div>
+          <img class="img-responsive" src="css/polaroid.jpg" alt="" />
+        </div> -->
+
+        <!-- Spotify Widget Global Top 40 -->
+
+        <!-- <div class="col-md-4">
+        	<iframe src="http://charts.spotify.com/embed?object=tracks&rank=most_streamed&country=global&windowtype=daily&date=latest" width="300" height="400" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+        </div>
+
+        <div class="col-md-4">
+          <iframe src="http://tunein.com/embed/player/s49632/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe>
+        </div> -->
+    </div> <!-- End of row -->
+  </div> <!-- End of container -->
+  </section>
+<!--RS=== Footer Begins ===RS-->
+
+    <nav class="navbar navbar-inverse navbar-fixed-bottom centeralign">
+      <div class="container">
+        <span style="color:white">Created by </span><a href="mailto:sinha@rushindra.com"><span style="color:grey">Rushindra Sinha</span></a> <span style="color:white">and </span><a href="mailto:tongcindyy@gmail.com"><span style="color:grey"> Cindy Tong</span></a>
+      </div>
+    </nav>
+<!--RS=== Footer Ends ===RS-->
+
+<!-- Modals -->
+
+<div class="modal fade" id="vocaltrance" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title centeralign" id="myModalLabel">Vocal Trance</h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="http://tunein.com/embed/player/s49632/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe>
+      </div>
+      <div class="modal-footer centeralign">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Back To Phomoto</button>
+      </div>
+    </div>
+  </div>
 </div>
 
-  </section>
+<div class="modal fade" id="jazz" tabindex="-1" role="dialog" aria-labelledby="jazzLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title centeralign" id="jazzLabel">Jazz</h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="http://tunein.com/embed/player/s250015/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe>
+      </div>
+      <div class="modal-footer centeralign">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Back To Phomoto</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="bollywood" tabindex="-1" role="dialog" aria-labelledby="bollywoodLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title centeralign" id="bollywoodLabel">Bollywood</h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="http://tunein.com/embed/player/s163461/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe>
+      </div>
+      <div class="modal-footer centeralign">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Back To Phomoto</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="classicrock" tabindex="-1" role="dialog" aria-labelledby="classicrockLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title centeralign" id="classicrockLabel">Classic Rock</h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="http://tunein.com/embed/player/s249994/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe>
+      </div>
+      <div class="modal-footer centeralign">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Back To Phomoto</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="disco" tabindex="-1" role="dialog" aria-labelledby="discoLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title centeralign" id="discoLabel">Disco</h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="http://tunein.com/embed/player/s250013/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe>
+      </div>
+      <div class="modal-footer centeralign">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Back To Phomoto</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="randb" tabindex="-1" role="dialog" aria-labelledby="randbLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title centeralign" id="randbLabel">R&B</h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="http://tunein.com/embed/player/s250040/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe>
+      </div>
+      <div class="modal-footer centeralign">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Back To Phomoto</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="hiphop" tabindex="-1" role="dialog" aria-labelledby="hiphopLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title centeralign" id="hiphopLabel">Hip Hop</h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="http://tunein.com/embed/player/s249987/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe>
+      </div>
+      <div class="modal-footer centeralign">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Back To Phomoto</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="pop" tabindex="-1" role="dialog" aria-labelledby="popLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title centeralign" id="popLabel">Pop</h4>
+      </div>
+      <div class="modal-body">
+        <iframe src="http://tunein.com/embed/player/s242677/" style="width:100%;height:100px;" scrolling="no" frameborder="no"></iframe>
+      </div>
+      <div class="modal-footer centeralign">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Back To Phomoto</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-  <section>
-<!-- Spotify Widget Global Top 40 -->
 
-<div id="spotify">
-	<iframe src="http://charts.spotify.com/embed?object=tracks&rank=most_streamed&country=global&windowtype=daily&date=latest" width="300" height="400" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
-<div>
-
-
-  </section>
-
-<!--RS=== Footer Begins ===RS-->
-  <footer>
-
-<p>Created by <a href="mailto: "sinha@rushindra.com>Rushindra Sinha</a> and <a href="mailto: "tongcindyy@gmail.com">Cindy Tong</a></p>
-
-  </footer>
-<!--RS=== Footer Ends ===RS-->
 
 
 
