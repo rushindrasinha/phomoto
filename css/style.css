@@ -8,6 +8,14 @@
 	font-family: "Century Gothic";
 }
 
+body#background {
+        background: url("greytable.jpg") no-repeat 50% 50% fixed;
+        background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+    }
+
 .centeralign {
 	text-align: center;
 }
