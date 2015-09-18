@@ -15,6 +15,6 @@ var callback = function(){
       }
     }
   });
-      setTimeout(callback, 5000);
+      setTimeout(callback, 10000);
 };
 callback();
